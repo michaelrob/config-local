@@ -1,0 +1,35 @@
+[user]
+        name = Michael Robinson
+        email = seraph890@gmail.com
+[core]
+        excludesfile = /Users/michaelrobinson/.gitignore_global
+[difftool "sourcetree"]
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
+
+[color]
+  ui = auto
+[apply]
+  whitespace = nowarn
+[alias]
+  co = checkout
+  st = status -s -b
+  ci = commit
+  sb = show-branch
+  up = !git fetch origin && git rebase origin/master
+  lg = log --graph --decorate --format='%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)%aN%Creset'
+  who = log --format="'%ai %h %aN %s'"
+  ba = branch -a
+  rpo = remote prune origin
+[branch]
+  autosetuprebase = always
+[log]
+  decorate = true
+[showbranch]
+  default = --all
+[filter "media"]
+        clean = git-media-clean %f
+        smudge = git-media-smudge %f
