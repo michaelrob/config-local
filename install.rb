@@ -10,8 +10,10 @@ if File.directory? "#{root}/.git"
 
     grails_settings_config "#{dot_grails_dir}/settings.groovy"
     FileUtils.touch grails_settings_config
+
+    # symlink config files
+    FileUtils.ln_s 'scripts/.bach_profile', '~/.bash_profile'
+    FileUtils.ln_s 'scripts/.bach_rc', '~/.bash_rc'
+    FileUtils.ln_s 'scripts/.gitconfig', '~/.gitconfig'
+    FileUtils.ln_s 'scripts/.vimrc', '~/.vimrc'
 end
-
-
-
-# symlink config files
