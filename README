@@ -1,1 +1,3 @@
 Scripts and stuff that I use
+
+Run install.rb to symlink the contents of scripts/ to your home directory. 
