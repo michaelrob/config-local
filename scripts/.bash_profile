@@ -11,9 +11,6 @@ complete -C $HOME/dotfiles/public/bash/completion_scripts/ssh_completion -o defa
 source $HOME/dotfiles/public/git/git-completion.bash
 
 alias home="cd ~/"
-alias audb="ssh -p 222 -L 3309:db03-lan.glo.siteminder.com:3306 mrobinson@services01.glo.siteminder.com"
-alias ukdb="ssh -p 222 -L 3310:db04-lan.glo.siteminder.com:3306 mrobinson@services01.glo.siteminder.com"
-alias devdb="ssh -p 222 -L 10000:db01.dev.siteminder.com:3306 mrobinson@services01.glo.siteminder.com"
 
 # ---------------------------------------------------------------
 
