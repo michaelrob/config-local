@@ -5,10 +5,10 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr
 export HISTCONTROL=ignoredups
 export PS1='\h:\W$(__git_ps1 " {%s}") \u\$ ' # NO COLOUR
 
-complete -C $HOME/dotfiles/public/bash/completion_scripts/thor_completion -o default thor
-complete -C $HOME/dotfiles/public/bash/completion_scripts/grails_completion -o default grails
-complete -C $HOME/dotfiles/public/bash/completion_scripts/ssh_completion -o default ssh
-source $HOME/dotfiles/public/git/git-completion.bash
+complete -C $HOME/scripts/thor_completion -o default thor
+complete -C $HOME/scripts/grails_completion -o default grails
+complete -C $HOME/scripts/ssh_completion -o default ssh
+source $HOME/scripts/git-completion.bash
 
 alias home="cd ~/"
 
