@@ -1,0 +1,11 @@
+.DS_Store
+CVS
+.cvsignore
+.svn
+*.class
+*.iws
+.rake_tasks~
+.*.swp
+tags
+brakeman.html
+chromedriver.log

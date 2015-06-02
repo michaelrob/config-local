@@ -16,4 +16,7 @@ if File.directory? "#{root}/.git"
     FileUtils.ln_s 'scripts/.bach_rc', '~/.bash_rc'
     FileUtils.ln_s 'scripts/.gitconfig', '~/.gitconfig'
     FileUtils.ln_s 'scripts/.vimrc', '~/.vimrc'
+
+    # symlink completion scripts
+    
 end

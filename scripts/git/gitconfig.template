@@ -1,0 +1,30 @@
+[color]
+  ui = auto
+[user]
+  name = <%= SETTINGS['name'] %>
+  email = <%= SETTINGS['email'] %>
+[apply]
+  whitespace = nowarn
+[alias]
+  co = checkout
+  st = status -s -b
+  ci = commit
+  sb = show-branch
+  up = !git fetch origin && git rebase origin/master
+  lg = log --graph --decorate --format='%Cred%h%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)%aN%Creset'
+  who = log --format="'%ai %h %aN %s'"
+[core]
+  excludesfile = <%= PUBLIC_DIR %>/git/gitignore
+  pager = less -R -i
+[branch]
+  autosetuprebase = always
+[log]
+  decorate = true
+[showbranch]
+  default = --all
+[github]
+  user = shenie
+[push]
+	default = current
+[merge]
+	defaultToUpstream = true
