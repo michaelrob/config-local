@@ -19,9 +19,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # ---------------------------------------------------------------
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/michaelrobinson/.gvm/bin/gvm-init.sh" ]] && source "/Users/michaelrobinson/.gvm/bin/gvm-init.sh"
-eval "$(rbenv init -)"
-export PATH=/Users/michaelrobinson/.gvm/springboot/current/bin:/Users/michaelrobinson/.gvm/lazybones/current/bin:/Users/michaelrobinson/.gvm/groovyserv/current/bin:/Users/michaelrobinson/.gvm/groovy/current/bin:/Users/michaelrobinson/.gvm/griffon/current/bin:/Users/michaelrobinson/.gvm/grails/current/bin:/Users/michaelrobinson/.gvm/gradle/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin:~/bin/
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/michaelrobinson/.sdkman"
+[[ -s "/Users/michaelrobinson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/michaelrobinson/.sdkman/bin/sdkman-init.sh"
