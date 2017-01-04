@@ -3,7 +3,11 @@
 require 'fileutils'
 
 if File.directory? "#{root}/.git"
-
+    
+    # toDo: this current doesn't work, fix up. 
+    # toDo: required updates
+	# ask for username
+	# cp files instead of linking them
     # Setup grails settings
     dot_grails_dir = "#{ENV['HOME']}/.grails"
     FileUtils.mkdir dot_grails_dir unless File.directory? dot_grails_dir
