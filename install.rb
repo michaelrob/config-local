@@ -6,8 +6,8 @@ if File.directory? "#{root}/.git"
 
     # toDo: this current doesn't work, fix up.
     # toDo: required updates
-	# ask for username
-	# cp files instead of linking them
+    	# ask for username
+    	# cp files instead of linking them
 
     # setup grails settings
     dot_grails_dir = "#{ENV['HOME']}/.grails"
