@@ -20,15 +20,15 @@ if File.directory? "#{root}/.git"
     FileUtils.touch scripts_home
 
     # symlink config files
-    FileUtils.ln_s 'scripts/.bash_profile', '~/.bash_profile'
-    FileUtils.ln_s 'scripts/.bash_rc', '~/.bash_rc'
-    FileUtils.ln_s 'scripts/.gitconfig', '~/.gitconfig'
-    FileUtils.ln_s 'scripts/.vimrc', '~/.vimrc'
+    FileUtils.cp_r 'scripts/.bash_profile', '~/.bash_profile'
+    FileUtils.cp_r 'scripts/.bash_rc', '~/.bash_rc'
+    FileUtils.cp_r 'scripts/.gitconfig', '~/.gitconfig'
+    FileUtils.cp_r 'scripts/.vimrc', '~/.vimrc'
 
     # symlink completion scripts
-    FileUtils.ln_s 'scripts/completion_scripts/grails_completion', '~/scripts/grails_completion'
-    FileUtils.ln_s 'scripts/completion_scripts/rake_completion', '~/scripts/rake_completion'
-    FileUtils.ln_s 'scripts/completion_scripts/ssh_completion', '~/scripts/ssh_completion'
-    FileUtils.ln_s 'scripts/completion_scripts/thor_completion', '~/scripts/thor_completion'
-    FileUtils.ln_s 'scripts/git/git-completion.bash', '~/scripts/git-completion.bash'
+    FileUtils.cp_r 'scripts/completion_scripts/grails_completion', '~/scripts/grails_completion'
+    FileUtils.cp_r 'scripts/completion_scripts/rake_completion', '~/scripts/rake_completion'
+    FileUtils.cp_r 'scripts/completion_scripts/ssh_completion', '~/scripts/ssh_completion'
+    FileUtils.cp_r 'scripts/completion_scripts/thor_completion', '~/scripts/thor_completion'
+    FileUtils.cp_r 'scripts/git/git-completion.bash', '~/scripts/git-completion.bash'
 end
