@@ -4,7 +4,7 @@ require 'fileutils'
 
 USAGE = <<ENDUSAGE
 Usage:
-   docubot [-h] [-v] [create [-s shell] [-f]] directory [-w writer] [-o output_file] [-n] [-l log_file]
+   script_installer [-h] [-v] [create [-s shell] [-f]] directory [-w writer] [-o output_file] [-n] [-l log_file]
 ENDUSAGE
 
 HELP = <<ENDHELP
