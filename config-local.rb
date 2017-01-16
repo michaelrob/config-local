@@ -49,6 +49,7 @@ def install
       # toDo: required updates
       	# ask for username
       	# cp files instead of linking them
+        # add mysql
 
       # setup grails settings
       dot_grails_dir = "#{ENV['HOME']}/.grails"
@@ -74,5 +75,7 @@ def install
       FileUtils.cp_r 'scripts/completion_scripts/ssh_completion', '~/scripts/ssh_completion'
       FileUtils.cp_r 'scripts/completion_scripts/thor_completion', '~/scripts/thor_completion'
       FileUtils.cp_r 'scripts/git/git-completion.bash', '~/scripts/git-completion.bash'
+
+      # copy mysql
   end
 end
