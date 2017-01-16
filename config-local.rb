@@ -4,7 +4,7 @@ require 'fileutils'
 
 USAGE = <<ENDUSAGE
 Usage:
-   script_installer [-h] [-v] [create [-s shell] [-f]] directory [-w writer] [-o output_file] [-n] [-l log_file]
+   config-local [-h] [-v] [create [-s shell] [-f]] directory [-w writer] [-o output_file] [-n] [-l log_file]
 ENDUSAGE
 
 HELP = <<ENDHELP
@@ -13,8 +13,8 @@ HELP = <<ENDHELP
 
 ENDHELP
 
-ARGS = { :shell=>'default', :writer=>'chm' } # Setting default values
-UNFLAGGED_ARGS = [ :directory ]              # Bare arguments (no flag)
+ARGS = { :shell=>'default', :writer=>'chm' }
+UNFLAGGED_ARGS = [ :directory ]
 next_arg = UNFLAGGED_ARGS.first
 ARGV.each do |arg|
   case arg
