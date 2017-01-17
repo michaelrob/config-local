@@ -1,42 +1,41 @@
-## Config-local -- my configs and scripts
+# ConfigLocal
 
-### About
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/config_local`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-These are the configs and scripts that I use. Mostly when setting up a new machine.
+TODO: Delete this and the text above, and describe your gem
 
-Also listed is some common information that I need for mysql and other packages.
+## Installation
 
-### Installation
+Add this line to your application's Gemfile:
 
-* `ruby install.rb`
+```ruby
+gem 'config_local'
+```
 
-#### Brew -- http://brew.sh/
+And then execute:
 
-Install brew, its the package manager that I use for mostly everything
+    $ bundle
 
-* `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+Or install it yourself as:
 
-#### RVM -- https://rvm.io/
+    $ gem install config_local
 
-RVM is my preferred Ruby Version Manager.
+## Usage
 
-* `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
-* `\curl -sSL https://get.rvm.io | bash -s stable`
+TODO: Write usage instructions here
 
-#### SDKMan -- http://sdkman.io/
+## Development
 
-SDKMan is a great version manager for JVM languages and packages. Usually I use it
-to install Grails, Groovy and Gradle.
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-* `curl -s "https://get.sdkman.io" | bash`
-* `source "$HOME/.sdkman/bin/sdkman-init.sh"`
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-#### MySQL
+## Contributing
 
-* Install mysql first `brew install mysql`
-* SQL cnf file should be copied to `/usr/local/etc/my.cnf`
-* SQL can be started by using `sudo mysql.server start` and stopped by using `sudo mysqld stop`
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/config_local.
 
-#### Git
 
-* Git global ignore and config should be copied to `~/`
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
