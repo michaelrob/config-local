@@ -1,0 +1,3 @@
+class ConfigLocal
+  
+end
