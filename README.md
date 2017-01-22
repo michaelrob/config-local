@@ -4,11 +4,16 @@
 
 These are the configs and scripts that I use. Mostly when setting up a new machine.
 
+For the most part these are all dev related packages for various languages that I
+play with. Remembering install information is the worst.
+
 Also listed is some common information that I need for mysql and other packages.
 
 ### Installation
 
 * `ruby install.rb`
+
+Below are the commands that I'm simplifying.
 
 #### Brew -- http://brew.sh/
 
@@ -30,6 +35,13 @@ to install Grails, Groovy and Gradle.
 
 * `curl -s "https://get.sdkman.io" | bash`
 * `source "$HOME/.sdkman/bin/sdkman-init.sh"`
+
+#### Stack -- http://haskellstack.org
+
+Stack is what I use for Haskell packages.
+
+* `brew install haskell-stack`
+* `curl -sSL https://get.haskellstack.org/ | sh` -- alternative install method
 
 #### MySQL
 
