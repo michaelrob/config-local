@@ -1,5 +1,5 @@
 require "config_local/version"
+require "config_local/cli"
 
 module ConfigLocal
-  # Your code goes here...
 end
