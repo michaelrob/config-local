@@ -9,7 +9,7 @@ module ConfigLocal
 
     desc "list available packages", "This will list packages available for installation"
     def list
-
+      
     end
   end
 end
