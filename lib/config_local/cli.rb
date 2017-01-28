@@ -5,6 +5,12 @@ module ConfigLocal
   class Veur < Thor
     desc "install PACKAGE", "This will install the selected package"
     def install(package)
+      if File.exists?("packages/#{package}/information.json") == false
+        puts "#{package} does not exist please check the name and try again"
+        next
+      end
+
+      JSON.parse(File.read("packages/#{package}/information.json"))
     end
 
     desc "list available packages", "This will list packages available for installation"
