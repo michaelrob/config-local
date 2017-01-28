@@ -1,0 +1,4 @@
+{
+  "name": "completion scripts",
+  "description": "Completion scripts are a collection of scripts used in bash completion, to work entires must be installed in your bash_profile."
+}
