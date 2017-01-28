@@ -8,8 +8,7 @@ module ConfigLocal
       # ToDo: maybe we can use an install.rb in the package directory as well
         # that way, we can use custom code for each package that we want to use
       if File.exists?("packages/#{package}/information.json") == false
-        puts "#{package} does not exist please check the name and try again"
-        next
+        return puts "#{package} does not exist please check the name and try again"
       end
 
       JSON.parse(File.read("packages/#{package}/information.json"))
