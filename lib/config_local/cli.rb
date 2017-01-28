@@ -20,6 +20,9 @@ module ConfigLocal
     def list
       # ToDo: better formatting, we should limit the amount of characters for easy
         # reading, and also right justify the install advice
+      # ToDo: variable directory, so users can add additional packages and things
+        # they want to install. Find a way to make the gem look for ruby scripts
+        # in the install directory
       Dir.foreach('packages') do |item|
         next if item == '.' or item == '..' or File.exists?("packages/#{item}/information.json") == false
         data = JSON.parse(File.read("packages/#{item}/information.json"))
