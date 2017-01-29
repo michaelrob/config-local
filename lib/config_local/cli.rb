@@ -3,6 +3,11 @@ require 'json'
 
 module ConfigLocal
   class Veur < Thor
+    def initialize
+      @default_location
+      @home_location
+    end
+
     desc "install PACKAGE", "Installs the selected package if it exists"
     def install(package)
       # ToDo: maybe we can use an install.rb in the package directory as well
