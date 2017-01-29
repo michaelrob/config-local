@@ -4,8 +4,8 @@ require 'json'
 module ConfigLocal
   class Veur < Thor
     def initialize
-      @default_location
-      @home_location
+      @default_location = "/packages/"
+      @home_location = "$HOME/packages"
     end
 
     desc "install PACKAGE", "Installs the selected package if it exists"
