@@ -52,3 +52,6 @@ Stack is what I use for Haskell packages.
 #### Git
 
 * Git global ignore and config should be copied to `~/`
+* Install the below script
+`curl -o ~/.git-prompt.sh \
+    https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh`
