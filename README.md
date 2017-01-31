@@ -11,8 +11,6 @@ Also listed is some common information that I need for mysql and other packages.
 
 ### Installation
 
-* `ruby install.rb`
-
 Below are the commands that I'm simplifying.
 
 #### Brew -- http://brew.sh/
