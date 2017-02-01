@@ -1,6 +1,6 @@
 require 'fileutils.rb'
 
-class BashInstall
+class Install
 
   # ToDo: add things related to bash installing
 
