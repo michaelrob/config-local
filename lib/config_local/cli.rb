@@ -20,7 +20,11 @@ module ConfigLocal
         return puts "#{package} does not exist please check the name and try again"
       end
 
-      JSON.parse(File.read("packages/#{package}/information.json"))
+      # read the json file into a variable, extract the commands to run and then
+      # use the backquotes `curl all-the-things` to make them run, next step, log output of each
+      # command to the console.
+      data = JSON.parse(File.read("packages/#{package}/information.json"))
+      commands = []
     end
 
     desc "list available packages", "Lists packages available for installation"
