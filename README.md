@@ -9,6 +9,26 @@ play with. Remembering install information is the worst.
 
 Also listed is some common information that I need for mysql and other packages.
 
+### Usage
+
+After installation, use the gem to install your dot files. Please see the below commands.
+
+#### Available Commands
+
+`install` -- will install the desired package
+`list` -- lists available packages to install
+`search` -- searches packages
+`help` -- shows this list
+
+#### Packages
+
+Packages are what I use to install my dot files and configs. Each "package" has its
+own directly within the "packages" folder. The gem also searches for packages in your
+home directory.
+Each package folder should contain an `information.json` file, this contains the
+package description, name, and bash commands to install to run. It should also contain
+any files the package needs to work. 
+
 ### Installation
 
 Below are the commands that I'm simplifying.
