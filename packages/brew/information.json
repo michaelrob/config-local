@@ -1,0 +1,7 @@
+{
+  "name": "brew",
+  "description": "Brew installer",
+  "commands": [
+    "brew install commands yo"
+  ]
+}
