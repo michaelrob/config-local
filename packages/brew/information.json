@@ -1,6 +1,6 @@
 {
   "name": "brew",
-  "description": "Brew installer",
+  "description": "Brew installer -- http://brew.sh/",
   "commands": [
     "/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
   ]
