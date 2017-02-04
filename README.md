@@ -9,6 +9,12 @@ play with. Remembering install information is the worst.
 
 Also listed is some common information that I need for mysql and other packages.
 
+### Installation
+
+Simply install the gem:
+
+`gem install config-local`
+
 ### Usage
 
 After installation, use the gem to install your dot files. Please see the below commands.
@@ -28,7 +34,6 @@ home directory.
 Each package folder should contain an `information.json` file, this contains the
 package description, name, and bash commands to install to run. It should also contain
 any files the package needs to work.
-
 
 ##### Brew -- http://brew.sh/
 
