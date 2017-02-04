@@ -27,26 +27,23 @@ own directly within the "packages" folder. The gem also searches for packages in
 home directory.
 Each package folder should contain an `information.json` file, this contains the
 package description, name, and bash commands to install to run. It should also contain
-any files the package needs to work. 
+any files the package needs to work.
 
-### Installation
 
-Below are the commands that I'm simplifying.
-
-#### Brew -- http://brew.sh/
+##### Brew -- http://brew.sh/
 
 Install brew, its the package manager that I use for mostly everything
 
 * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-#### RVM -- https://rvm.io/
+##### RVM -- https://rvm.io/
 
 RVM is my preferred Ruby Version Manager.
 
 * `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
 * `\curl -sSL https://get.rvm.io | bash -s stable`
 
-#### SDKMan -- http://sdkman.io/
+##### SDKMan -- http://sdkman.io/
 
 SDKMan is a great version manager for JVM languages and packages. Usually I use it
 to install Grails, Groovy and Gradle.
@@ -54,20 +51,20 @@ to install Grails, Groovy and Gradle.
 * `curl -s "https://get.sdkman.io" | bash`
 * `source "$HOME/.sdkman/bin/sdkman-init.sh"`
 
-#### Stack -- http://haskellstack.org
+##### Stack -- http://haskellstack.org
 
 Stack is what I use for Haskell packages.
 
 * `brew install haskell-stack`
 * `curl -sSL https://get.haskellstack.org/ | sh` -- alternative install method
 
-#### MySQL
+##### MySQL
 
 * Install mysql first `brew install mysql`
 * SQL cnf file should be copied to `/usr/local/etc/my.cnf`
 * SQL can be started by using `sudo mysql.server start` and stopped by using `sudo mysqld stop`
 
-#### Git
+##### Git
 
 * Git global ignore and config should be copied to `~/`
 * Install the below script
