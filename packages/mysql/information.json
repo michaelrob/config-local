@@ -1,0 +1,8 @@
+{
+  "name": "mysql",
+  "description": "mysql installer and config",
+  "commands": [
+    "brew install mysql",
+    "cp packages/mysql/my.cnf /file/location"
+  ]
+}
