@@ -69,6 +69,10 @@ Stack is what I use for Haskell packages.
 * SQL cnf file should be copied to `/usr/local/etc/my.cnf`
 * SQL can be started by using `sudo mysql.server start` and stopped by using `sudo mysqld stop`
 
+#### pSQL
+
+* ln /private/tmp/.s.PGSQL.5432 postgresql/
+
 ##### Git
 
 * Git global ignore and config should be copied to `~/`
