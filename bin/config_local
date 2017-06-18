@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby -U
-
-require 'config_local'
-
-ConfigLocal::Veur.start( ARGV )
