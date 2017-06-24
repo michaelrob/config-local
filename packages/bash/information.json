@@ -1,8 +1,0 @@
-{
-  "name": "bash",
-  "description": "This contains bash_profile and bashrc, these are very handy :)",
-  "commands": [
-    "cp .bash_profile ~/",
-    "cp .bashrc ~/"
-  ]
-}

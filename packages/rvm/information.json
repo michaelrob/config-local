@@ -1,7 +1,0 @@
-{
-  "name": "rvm",
-  "description": "rvm installer -- https://rvm.io/",
-  "commands": [
-    "\\curl -sSL https://get.rvm.io | bash -s stable"
-  ]
-}

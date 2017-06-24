@@ -1,8 +1,0 @@
-{
-  "name": "sdkman",
-  "description": "JVM version manager, it can install everything from Java and Groovy to Scala and Kotlin",
-  "commands": [
-    "curl -s \"https://get.sdkman.io\" | bash",
-    "source \"$HOME/.sdkman/bin/sdkman-init.sh\""
-  ]
-}
